@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamdani | Portfolio & Data Science Research</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome untuk Ikon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">Hamdani<span>.dev</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">Tentang</a>
+        <a href="#projects">Riset & Proyek</a>
+        <a href="#publications">Publikasi Jurnal</a>
+        <a href="#experience">Pengalaman</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="badge">Data Science & AI Researcher</span>
+        <h1>Halo, Saya <span>Hamdani</span></h1>
+        <h2>Informatics Engineer | Machine Learning & Deep Learning Specialist</h2>
+        <p>
+          Lulusan S1 Teknik Informatika Universitas Muhammadiyah Makassar yang berfokus pada bidang Data Science dan AI, aktif melakukan riset 
+          penerapan kecerdasan buatan, optimasi hyperparameter metaheuristik, dan analisis prediktif kesehatan.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Lihat Bukti Riset</a>
+          <a href="assets/cv-anda.pdf" download class="btn btn-outline">
+            <i class="fas fa-download"></i> Unduh CV
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="photo-frame">
+          <!-- Masukkan foto profesional Anda di folder assets dengan nama foto-profil.jpg -->
+          <img src="asset/FotoProfile.png" alt="Foto Profil Hamdani" onerror="this.src='https://via.placeholder.com/380x420/1e293b/38bdf8?text=Hamdani'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TENTANG & KEAHLIAN TEKNIS -->
+  <section id="about" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">Tentang & Keahlian Teknis</h2>
+      <p class="section-subtitle">
+        Memiliki rekam jejak publikasi ilmiah terakreditasi, pengalaman magang analisis data pemerintahan, 
+        serta penguasaan mendalam pada arsitektur model cerdas.
+      </p>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3><i class="fas fa-brain"></i> Artificial Intelligence & ML</h3>
+          <div class="skill-tags">
+            <span>Python</span>
+            <span>Deep Neural Networks (DNN)</span>
+            <span>Genetic Algorithm (GA)</span>
+            <span>Particle Swarm Optimization (PSO)</span>
+            <span>Grid Search Tuning</span>
+            <span>Scikit-Learn & TensorFlow</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3><i class="fas fa-code"></i> Pengembangan Sistem</h3>
+          <div class="skill-tags">
+            <span>HTML5 & CSS3</span>
+            <span>JavaScript</span>
+            <span>CodeIgniter 4</span>
+            <span>React Native</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3><i class="fas fa-database"></i> Database & Tools</h3>
+          <div class="skill-tags">
+            <span>PostgreSQL (psql)</span>
+            <span>MySQL</span>
+            <span>Git & GitHub</span>
+            <span>VS Code</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYEK & RISET UTAMA (BUKTI NYATA) -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Bukti Nyata Riset & Proyek</h2>
+      <p class="section-subtitle">Klik kartu di bawah untuk melihat rincian metodologi, parameter, dan hasil pengujian.</p>
+
+      <div class="projects-grid">
+        <!-- Riset 1: DNN + GA vs PSO -->
+        <article class="project-card" data-project="proj1">
+          <div class="project-header">
+            <span class="project-category">Deep Learning & Metaheuristik</span>
+            <div class="project-links">
+              <a href="https://github.com/username/dnn-ga-pso-diabetes" target="_blank" title="GitHub Repository" onclick="event.stopPropagation()">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Optimasi Hyperparameter DNN dengan GA & PSO</h3>
+          <p>
+            Studi komparasi *head-to-head* antara Genetic Algorithm (GA) dan Particle Swarm Optimization (PSO) 
+            untuk tuning Deep Neural Network pada 1.493 rekam medis klinis[cite: 9].
+          </p>
+          <div class="tech-stack">
+            <span>Python</span>
+            <span>TensorFlow/Keras</span>
+            <span>Genetic Algorithm</span>
+            <span>PSO</span>
+          </div>
+          <span class="detail-trigger">Lihat Detail Hasil Riset (Akurasi 95.76%) &rarr;</span>
+        </article>
+
+        <!-- Riset 2: Decision Tree + Grid Search -->
+        <article class="project-card" data-project="proj2">
+          <div class="project-header">
+            <span class="project-category">Machine Learning / Publikasi Sinta</span>
+            <div class="project-links">
+              <a href="https://github.com/username/gridsearch-decision-tree" target="_blank" title="GitHub Repository" onclick="event.stopPropagation()">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Grid Search pada Decision Tree untuk Prediksi Diabetes</h3>
+          <p>
+            Penerapan *Grid Search Hyperparameter Tuning* untuk mengoptimalkan parameter pohon keputusan 
+            berdasarkan 768 data rekam medis[cite: 1, 3].
+          </p>
+          <div class="tech-stack">
+            <span>Python</span>
+            <span>Scikit-Learn</span>
+            <span>Grid Search</span>
+            <span>Pandas</span>
+          </div>
+          <span class="detail-trigger">Lihat Detail Hasil Riset (Akurasi 81%) &rarr;</span>
+        </article>
+
+        <!-- Proyek 3: Sistem Dashboard Web -->
+        <article class="project-card" data-project="proj3">
+          <div class="project-header">
+            <span class="project-category">Web Development & Database</span>
+            <div class="project-links">
+              <a href="https://github.com/username/asset-dashboard" target="_blank" title="GitHub Repository" onclick="event.stopPropagation()">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Sistem Dashboard Web & Manajemen Aset Instansi</h3>
+          <p>
+            Pengembangan aplikasi berbasis web untuk digitalisasi pengelolaan arsip administratif 
+            dan pelacakan data aset instansi pemerintah.
+          </p>
+          <div class="tech-stack">
+            <span>CodeIgniter 4</span>
+            <span>PostgreSQL</span>
+            <span>Bootstrap / CSS</span>
+          </div>
+          <span class="detail-trigger">Lihat Detail Sistem &rarr;</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLIKASI ILMIAH -->
+  <section id="publications" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">Publikasi Ilmiah</h2>
+      <p class="section-subtitle">Karya tulis ilmiah peer-reviewed di bidang kecerdasan buatan dan prediksi kesehatan.</p>
+
+      <div class="pub-list">
+        <div class="pub-item">
+          <div class="pub-badge">2025 / 2026</div>
+          <div class="pub-content">
+            <h3>Comparative Hyperparameter Optimization of Deep Neural Networks Using Genetic Algorithm and Particle Swarm Optimization for Diabetes Prediction</h3>
+            <p class="pub-meta">Hamdani, Desi Anggreani, dkk. • Menunjukkan keunggulan DNN-GA dengan akurasi 95.76%[cite: 9].</p>
+            <a href="#" target="_blank" class="pub-link">Lihat Detail Jurnal <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-badge">SINTA 3</div>
+          <div class="pub-content">
+            <h3>Grid Search Hyperparameter Analysis in Optimizing The Decision Tree Method for Diabetes Prediction</h3>
+            <p class="pub-meta">Indonesian Journal of Data and Science (Vol 5 Issue 3, 2024) • Desi Anggreani, Hamdani, Nurmisba, Lukman[cite: 1].</p>
+            <a href="https://doi.org/10.56705/ijodas.v5i3.190" target="_blank" class="pub-link">Baca DOI Resmi <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PENGALAMAN & KEPEMIMPINAN -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Pengalaman & Kepemimpinan</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Magang Struktural</span>
+            <h3>Dinas Tanaman Pangan, Hortikultura, dan Perkebunan Prov. Sulawesi Selatan</h3>
+            <p>
+              Menangani analisis data aset daerah, manajemen arsip administratif instansi secara terstruktur, 
+              serta dukungan pelacakan aset berbasis sistem.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Ketua Tim (Team Leader)</span>
+            <h3>Program Kreativitas Mahasiswa (PKM-PI) & Pengabdian Masyarakat</h3>
+            <p>
+              Memimpin perancangan sistem perangkat lunak terapan, pembangunan dashboard web, 
+              serta pelaksanaan pelatihan literasi digital di lingkungan pendidikan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="contact" class="section bg-alt">
+    <div class="container contact-container">
+      <h2 class="section-title">Mari Terhubung</h2>
+      <p class="section-subtitle">
+        Terbuka untuk peluang kolaborasi riset, pengembangan proyek AI, maupun kesempatan karir profesional.
+      </p>
+
+      <div class="contact-actions">
+        <!-- Ganti dengan email asli Anda -->
+        <button id="copyEmailBtn" class="btn btn-primary" data-email="hamdani085340883713@gmail.com">
+          <i class="fas fa-copy"></i> Salin Email (hamdani085340883713@gmail.com)
+        </button>
+        <a href="https://linkedin.com" target="_blank" class="btn btn-outline">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com" target="_blank" class="btn btn-outline">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+      <p id="copyFeedback" class="copy-feedback"></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Hamdani. Dibangun dengan HTML, CSS, dan JavaScript.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL POP-UP DETAIL PROYEK -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal">&times;</button>
+      <span id="modalCategory" class="project-category"></span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <div class="modal-metrics">
+        <h4>Sorotan Metodologi & Hasil Nyata:</h4>
+        <ul id="modalHighlights"></ul>
+      </div>
+      <div class="modal-footer">
+        <a id="modalGithub" href="#" target="_blank" class="btn btn-primary">
+          <i class="fab fa-github"></i> Lihat Repository GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
